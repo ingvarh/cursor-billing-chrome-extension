@@ -1,0 +1,74 @@
+/* Averages row */
+.cis-avgRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.cis-avgItem {
+  padding: 10px 12px;
+  border: 1px solid var(--color-theme-border-quaternary);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+}
+
+.cis-avgLabel {
+  font-size: 12px;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+.cis-avgValue {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Chart */
+.cis-chartWrap {
+  height: 180px;
+  overflow: hidden;
+  padding: 16px 0;
+}
+
+.cis-chart {
+  height: 180px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 8px;
+  align-items: end;
+}
+
+.cis-barWrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.cis-amountLabel {
+  font-size: 10px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cis-bar {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.22);
+  min-height: 2px;
+}
+
+.cis-xLabel {
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

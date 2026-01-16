@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Cursor Invoices Summary",
+  "version": "1.0.0",
+  "description": "Adds a summary panel under Invoices with totals, bar chart, and running averages (3/6/12 months).",
+  "host_permissions": ["https://cursor.com/*"],
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://cursor.com/dashboard?tab=billing*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
